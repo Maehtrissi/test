@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#006947","error":"#ba1a1a","outline":"#6d7a77","on-primary-container":"#f4fffc","inverse-primary":"#6bd8cb","on-secondary-container":"#57657b","tertiary-fixed":"#6ffbbe","surface-container-high":"#dce9ff","outline-variant":"#bcc9c6","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","tertiary-container":"#00855b","background":"#f8f9ff","on-error":"#ffffff","on-surface":"#0b1c30","on-error-container":"#93000a","on-primary-fixed-variant":"#005049","on-tertiary-container":"#f5fff6","inverse-surface":"#213145","surface-variant":"#d3e4fe","secondary-fixed":"#d5e3fd","secondary-container":"#d5e3fd","inverse-on-surface":"#eaf1ff","primary-fixed-dim":"#6bd8cb","on-secondary-fixed":"#0d1c2f","tertiary-fixed-dim":"#4edea3","on-secondary":"#ffffff","on-tertiary":"#ffffff","surface-dim":"#cbdbf5","surface-tint":"#006a61","surface-bright":"#f8f9ff","on-background":"#0b1c30","on-tertiary-fixed":"#002113","on-primary":"#ffffff","on-secondary-fixed-variant":"#3a485c","primary-fixed":"#89f5e7","primary-container":"#008378","surface":"#f8f9ff","on-tertiary-fixed-variant":"#005236","secondary-fixed-dim":"#b9c7e0","secondary":"#515f74","on-surface-variant":"#3d4947","on-primary-fixed":"#00201d","error-container":"#ffdad6","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","primary":"#00685f"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-mobile":"1rem","space-md":"1rem","margin":"2rem","gutter-mobile":"0.75rem","space-xs":"0.25rem","space-xl":"2rem","space-lg":"1.5rem","gutter":"1rem","space-sm":"0.5rem"},fontFamily:{"headline-md":["Inter"],"headline-xl":["Inter"],"label-sm":["Inter"],"headline-xl-mobile":["Inter"],"title-md":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"]},fontSize:{"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["26px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm"><img alt="Sponti Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VCUvLDejBEY9SwQO7bR-9_LUNN-heEHOJIhGplcH5n3EcccgwpSnNwEKSDirlBhVwqEd9SDfeq1r5J91m1SovS21feb-iHWdJj_9FQ4qgf6koC3ibhUtgfaNwDr6xL1-2spwOpcWUjDzWwV2E0gEC58_MU6_mKjKVI-_KxDXbbR8-596yaEosWigT86AUXaj9pFuc4hx0Pt_JEqKhn8WcfUsSe2BrtUjH6j1MdLJGaGuVni8qVMux-g980"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Sponti</span><span class="ml-auto bg-surface-container px-space-xs py-0.5 rounded text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">B2B Core</span></div><nav class="px-space-md py-space-sm flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-title-md"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-title-md" data-path="uebersicht" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Übersicht</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="unternehmen-und-partner" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">store</span><span>Unternehmen & Partner</span></div><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">14</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kunden-und-mitglieder" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span>Kunden & Mitglieder</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="aktivitaeten-und-deals" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">local_activity</span><span>Aktivitäten & Deals</span></div><span class="px-1.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">Live</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analysen-und-berichte" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">monitoring</span><span>Analysen & Berichte</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="einstellungen" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span>Einstellungen</span></div></a></nav></div><div class="p-space-md m-space-md bg-surface-container-low rounded-xl"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Status</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Aktiv</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">API Gateway: 99.98%</div><div class="mt-space-sm h-1.5 w-full bg-surface-container rounded-full overflow-hidden"><div class="h-full bg-tertiary-container rounded-full w-full"></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[20px] text-outline">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-[0_0_0_1px_rgba(0,104,95,0.2)] transition-all" placeholder="Kunden, Unternehmen, Aktionen suchen..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs"><button class="px-space-sm py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">Standorte</button><button class="px-space-sm py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">Aktiv</button></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIvlBDUc7n7DUwEq4lgajAmw0FlbZsZYFcTG-5cKbtIS0x_9neRBhNZbXhs98Sgzq0JjCXL_mqNFxqd5gsGsckay0wU1X93RYpHO5LvqCh1sUElSMtp90WHgantCNUhRxlDElhhaU_Gu8MQjc_k6MEmUkxHPboIZw-XzDaZ1YiGnbOw4cFJnE3S3P9J3-cyrNv2n023OKQw7GpTRiHZc3HzrwlLpqiP_H8WgRIoEP4MC7iuHPE_QtQ4Q"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Sarah Weber</span><span class="font-label-sm text-label-sm text-on-surface-variant">Admin</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-48 -bottom-20 h-48 w-48 rounded-full bg-tertiary/5 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md lg:flex-row lg:items-center lg:justify-between">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs rounded-full bg-surface-container-high px-space-sm py-0.5 text-on-secondary-container">
+<span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Live Netzwerk Übersicht</span>
+</div>
+<h1 class="mt-space-xs font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Willkommen zurück, Sarah!
+        </h1>
+<p class="mt-1 font-body-md text-body-md text-on-surface-variant">
+          Hier ist der aktuelle Status deiner Community und Partnernetzwerke. Heute verzeichnen wir eine um 18% gesteigerte Interaktionsrate bei Live-Aktionen.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="group inline-flex items-center gap-space-xs rounded-lg bg-surface-container-low px-space-md py-2.5 font-label-md text-label-md text-on-surface shadow-sm hover:bg-surface-container-high transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">person_add</span>
+<span>Kunde anlegen</span>
+</button>
+<button class="group inline-flex items-center gap-space-xs rounded-lg bg-primary px-space-md py-2.5 font-label-md text-label-md text-on-primary shadow-sm hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:rotate-12 transition-transform">add_business</span>
+<span>Neuen Partner einladen</span>
+</button>
+</div>
+</div>
+</div>
+<section class="mt-space-lg grid grid-cols-1 gap-gutter sm:grid-cols-2 xl:grid-cols-4">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Kooperationspartner</span>
+<span class="rounded-lg bg-surface-container p-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">148</span>
+<span class="inline-flex items-center rounded-full bg-tertiary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-tertiary-fixed">
+          Aktiv: 139
+        </span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<div class="inline-flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-label-md text-label-md">+12</span>
+</div>
+<span>Diesen Monat hinzugefügt</span>
+</div>
+<div class="mt-3 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 93%;"></div>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Registrierte Mitglieder</span>
+<span class="rounded-lg bg-surface-container p-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">14.820</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">+6.1%</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<div class="inline-flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">person_check</span>
+<span class="font-label-md text-label-md">+840</span>
+</div>
+<span>Neuanmeldungen lfd.</span>
+</div>
+<div class="mt-3 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Aktive Spontan-Aktionen</span>
+<span class="relative rounded-lg bg-surface-container p-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span class="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-error animate-ping"></span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">56</span>
+<span class="inline-flex items-center rounded-full bg-secondary-container px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-fixed">
+          Live Deals
+        </span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<div class="inline-flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-label-md text-label-md">24 Standorte</span>
+</div>
+<span>Events heute</span>
+</div>
+<div class="mt-3 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 64%;"></div>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Partner-Umsatz / Vermittl.</span>
+<span class="rounded-lg bg-surface-container p-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface">48.950 €</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<div class="inline-flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="font-label-md text-label-md">+18.4%</span>
+</div>
+<span>vs. Vormonat</span>
+</div>
+<div class="mt-3 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 86%;"></div>
+</div>
+</div>
+</section>
+<div class="mt-space-lg grid grid-cols-1 gap-gutter lg:grid-cols-12">
+<section class="lg:col-span-8 flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface tracking-tight">Kürzlich hinzugefügte Unternehmen & Partner</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verifizierte Profile und anstehende Onboarding-Prüfungen</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 rounded-lg bg-surface-container-low px-space-sm py-1.5 font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+<span>Filter</span>
+</button>
+<button class="inline-flex items-center gap-1 rounded-lg bg-surface-container-low px-space-sm py-1.5 font-label-sm text-label-sm text-primary hover:bg-surface-container-high transition-colors" type="button">
+<span>Alle anzeigen</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto mt-space-xs">
+<table class="w-full text-left font-body-md text-body-md text-on-surface">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l-lg" scope="col">Unternehmen</th>
+<th class="py-2.5 px-3" scope="col">Kategorie</th>
+<th class="py-2.5 px-3" scope="col">Standort</th>
+<th class="py-2.5 px-3" scope="col">Status</th>
+<th class="py-2.5 px-3" scope="col">Ansprechpartner</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg" scope="col">Aktionen</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="h-9 w-9 rounded-lg object-cover shadow-sm" data-alt="Modern artisanal cafe interior with warm oak furnishings, espresso machine and patrons enjoying pastries in soft ambient daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFLMKLSZn669cIPoLTVRyaNGouQkmOAq63eMz5DZ9lQn9yhiqa03QSXRvt74IFoXwm7p6fFJbXnImmaFqopzGrWyH1TswSgeJCgyDT9kG7gYb78DuJxYvZa1z-PzZpGCxLiqdZR8QgTMPvURmL6na1lg__VwsFLqDWQvrEsyIg68RPlikC5p-K1jI7EKYXcODA4vZ8t4V-pmjbuEDKG6Fmmhe-AAgWV8I6WaHsSScg8pxtz4GtuJ5ytA"/>
+<div class="min-w-0">
+<div class="font-title-md text-body-md text-on-surface truncate">Café Botanico</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SP-8421</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">restaurant</span>
+                  Gastronomie
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant">Berlin, Mitte</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-tertiary-fixed font-medium">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+                  Verifiziert
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface">Elena Rostova</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Details öffnen" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Bearbeiten" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="h-9 w-9 rounded-lg object-cover shadow-sm" data-alt="Sleek boutique fitness gym studio with kettlebells, ambient turquoise neon strips and floor-to-ceiling mirror mirrors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHJBP6K8EvpEe_8YEQ_AHUBAGowAXSsKDlbV-ufH4dEV-yhW1ha6UpUmE4-iV46v4R39K-RBvTQZb1R5Um_SPs5n22FYnSDL-fGZ6sm8zygorM_-841h4OOjyrB0q1LLdKeNHCm8mhcUc4W5TyAummmRDF14N9WYQ2aXS3mtMPaUSdXtXhfE4j1nMOwJtpOyM546Ft6GdXnSEYmSaRrw-PJVIRQehDxPj4Hnf21B4y56JBZxAg8ettg"/>
+<div class="min-w-0">
+<div class="font-title-md text-body-md text-on-surface truncate">Urban Peak Boulder & Gym</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SP-9104</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span>
+                  Sport & Fitness
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant">München, Schwabing</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-tertiary-fixed font-medium">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+                  Verifiziert
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface">Marc Lindemann</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Details öffnen" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Bearbeiten" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="h-9 w-9 rounded-lg object-cover shadow-sm" data-alt="Chic open air rooftop lounge venue at golden hour overlooking city skyline with cocktail glasses on high tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsjtzv8JrxgIhK0hSdV6je4uIJD-DRKfNm3-fFcksltIe2uK6lV5XzFPzNVssWKfP1zdUI-RSzD2lmrWnqr0Iut1caCJJhFVNPzcINJxdpRphgXrcKXrLX1jFpMlVgz6z5xuQhW8Dg3aiXwo_H8l29K228NM6KrSdBMRtMAfI_hq3h9-gaXMvxdS4mXBm7QYbwkt0Qtm3RleDUiRKRNpQo8btWZv5xYkWBvhJ2TVJ2BbIZ03JoHMHVkw"/>
+<div class="min-w-0">
+<div class="font-title-md text-body-md text-on-surface truncate">Skyline Lounge & Arts</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SP-7319</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">theater_comedy</span>
+                  Kultur & Events
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant">Hamburg, Altona</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-tertiary-fixed font-medium">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+                  Verifiziert
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface">Sophie von Berg</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Details öffnen" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Bearbeiten" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="h-9 w-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary font-title-md">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-body-md text-on-surface truncate">Aura Day Spa & Wellness</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">ID: SP-9833</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-surface-container px-2 py-0.5 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">self_improvement</span>
+                  Freizeit & Spa
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant">Köln, Belgisches V.</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 rounded-full bg-surface-container-highest px-2 py-0.5 font-label-sm text-label-sm text-on-surface font-medium">
+<span class="h-1.5 w-1.5 rounded-full bg-outline"></span>
+                  In Prüfung
+                </span>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface">Timo Krause</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1.5 rounded-md text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" title="Details öffnen" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-md text-tertiary hover:bg-surface-container-high transition-colors" title="Freigeben" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-auto pt-space-md flex flex-wrap items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Zeige 4 von 148 Partnern</span>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container disabled:opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm">1</span>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm" type="button">2</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm" type="button">3</button>
+<button class="p-1 rounded bg-surface-container-low text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<section class="lg:col-span-4 flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface tracking-tight">Kunden-Aktivitäten</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Echtzeit-Feed der Community</p>
+</div>
+<span class="inline-flex items-center gap-1 rounded-full bg-tertiary-fixed px-2 py-0.5 font-label-sm text-label-sm text-on-tertiary-fixed">
+          Live Sync
+        </span>
+</div>
+<div class="relative mt-space-sm flex flex-col gap-space-md">
+<div class="absolute left-4 top-2 bottom-2 w-0.5 bg-surface-container"></div>
+<div class="relative flex items-start gap-space-sm">
+<div class="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-on-primary text-label-sm shadow-sm">
+            JL
+          </div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-body-md text-on-surface truncate">Jonas Lehmann</span>
+<span class="shrink-0 font-label-sm text-label-sm text-outline">vor 2 Min.</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Hat Deal eingelöst: <span class="font-medium text-on-surface">"2-für-1 Flat White"</span> bei Café Botanico.
+            </p>
+</div>
+</div>
+<div class="relative flex items-start gap-space-sm">
+<div class="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-tertiary text-on-tertiary text-label-sm shadow-sm">
+            MA
+          </div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-body-md text-on-surface truncate">Maya A.</span>
+<span class="shrink-0 font-label-sm text-label-sm text-outline">vor 11 Min.</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Neu registriert via Einladungslink von <span class="font-medium text-on-surface">Urban Peak Boulder</span>.
+            </p>
+</div>
+</div>
+<div class="relative flex items-start gap-space-sm">
+<div class="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary text-on-secondary text-label-sm shadow-sm">
+            FK
+          </div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-body-md text-on-surface truncate">Florian Koch</span>
+<span class="shrink-0 font-label-sm text-label-sm text-outline">vor 24 Min.</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Teilnahme bestätigt an Spontan-Event <span class="font-medium text-on-surface">"Sunset Rooftop Beats"</span>.
+            </p>
+</div>
+</div>
+<div class="relative flex items-start gap-space-sm">
+<div class="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary-container text-on-primary-container text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-title-md text-body-md text-on-surface truncate">System Bot</span>
+<span class="shrink-0 font-label-sm text-label-sm text-outline">vor 45 Min.</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Monatliches Kontingent für Premium-Partner <span class="font-medium text-on-surface">Skyline Lounge</span> freigeschaltet.
+            </p>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full rounded-lg bg-surface-container-low py-2 font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-colors text-center" type="button">
+        Vollständiges Protokoll einsehen
+      </button>
+</section>
+</div>
+<section class="mt-space-lg rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface tracking-tight">Kategorie-Verteilung im Partner-Netzwerk</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Branchensegmente der aktiven B2B-Kooperationen</p>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="h-2 w-2 rounded-full bg-primary"></span> Ziel: >50% Gastro
+        </span>
+<span class="inline-flex items-center gap-1">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span> Hohe Interaktion: Sport
+        </span>
+</div>
+</div>
+<div class="mt-space-md grid grid-cols-1 gap-space-md md:grid-cols-2 lg:grid-cols-4">
+<div class="rounded-lg bg-surface-container-low p-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">restaurant</span>
+            Gastronomie
+          </span>
+<span class="font-headline-sm text-headline-sm text-primary">42%</span>
+</div>
+<div class="mt-space-xs h-2 w-full rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-primary transition-all duration-500" style="width: 42%;"></div>
+</div>
+<div class="mt-1 flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>62 Partner</span>
+<span>+4 neu</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">fitness_center</span>
+            Sport & Fitness
+          </span>
+<span class="font-headline-sm text-headline-sm text-tertiary">28%</span>
+</div>
+<div class="mt-space-xs h-2 w-full rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-tertiary transition-all duration-500" style="width: 28%;"></div>
+</div>
+<div class="mt-1 flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>41 Partner</span>
+<span>+5 neu</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">theater_comedy</span>
+            Kultur & Events
+          </span>
+<span class="font-headline-sm text-headline-sm text-secondary">18%</span>
+</div>
+<div class="mt-space-xs h-2 w-full rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-secondary transition-all duration-500" style="width: 18%;"></div>
+</div>
+<div class="mt-1 flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>27 Partner</span>
+<span>+2 neu</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-space-sm">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-outline">category</span>
+            Sonstiges
+          </span>
+<span class="font-headline-sm text-headline-sm text-outline">12%</span>
+</div>
+<div class="mt-space-xs h-2 w-full rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-outline transition-all duration-500" style="width: 12%;"></div>
+</div>
+<div class="mt-1 flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>18 Partner</span>
+<span>+1 neu</span>
+</div>
+</div>
+</div>
+</section>
+</div></main></div></body></html>
